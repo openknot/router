@@ -1,2 +1,7 @@
+mqtt:
+    image: prologic/mosquitto
+
 router:
     build: .
+    links:
+        - mqtt
